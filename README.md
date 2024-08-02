@@ -4,9 +4,13 @@
 # Final Project Overview
 
 ✅ A new Lex chatbot called BankerBot.
+
 ✅ WelcomeIntent set up.
+
 ✅ FallbackIntent customised, i.e., your BankerBot says a customised error message if it doesn't understand the user's input.
+
 ✅ CheckBalance set up with your custom slot type called accountType.
+
 ✅ Random bank balance figures returned to you when you check your balance.
 
 
@@ -49,6 +53,7 @@
 
 
 1. Scroll down to Closing response, and expand the speech bubble for Response sent to the user after the intent is fulfilled.
+
 2. In the Message field, enter the following message:
 
 ![image](https://github.com/user-attachments/assets/fbcd2ef9-095a-459a-83fc-3efa622c4719)
@@ -108,14 +113,14 @@
 
 
 
-# Step 4: Create the CheckBalance intent
+# Step 5: Create the CheckBalance intent
 
 
 ![image](https://github.com/user-attachments/assets/37c38446-d78e-4ee4-bc7a-b8bf1fc7a9e5)
 
 
 
-1. head back to Intents.
+1. Head back to Intents.
 2. Choose Add intent, then Add empty intent.
 3. Enter as your intent name
 4. Choose Add.
@@ -151,7 +156,7 @@
 
 
 
-# Step 5: Create Your AWS Lambda Function
+# Step 6: Create Your AWS Lambda Function
 
 1. Head to Lambda in your AWS Management Console.
 
@@ -176,7 +181,7 @@ https://storage.googleapis.com/nextwork_course_resources/courses/aws/AWS%20Proje
 ![image](https://github.com/user-attachments/assets/141cd42f-a55c-4671-bdbf-554d8a592cca)
 
 
-# Step 6: Connect AWS Lambda with Amazon Lex
+# Step 7: Connect AWS Lambda with Amazon Lex
 
 1. Head back to your Amazon Lex console.
 2. Select BankerBot.
@@ -189,7 +194,7 @@ https://storage.googleapis.com/nextwork_course_resources/courses/aws/AWS%20Proje
 ![image](https://github.com/user-attachments/assets/cfcc095f-ae12-4244-92ed-93948546fcac)
 
 
-# Step 7: Connect your CheckBalance intent with your Lambda function
+# Step 8: Connect your CheckBalance intent with your Lambda function
 
 1. Navigate to your CheckBalance intent.
 2. Scroll down to fulfillment panel.
