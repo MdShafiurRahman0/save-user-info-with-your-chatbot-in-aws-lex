@@ -234,7 +234,10 @@ https://storage.googleapis.com/nextwork_course_resources/courses/aws/AWS%20Proje
 ![image](https://github.com/user-attachments/assets/ea4ec229-07af-4210-9138-32d06254690a)
 
 
+
 # Implement Context Carryover
+
+
 
 We still need to tell the FollowupCheckBalance intent where to find the user's date of birth information from the CheckBalance intent! Let's do that now.
 
@@ -244,7 +247,11 @@ Still in your FollowupCheckBalance intent page, expand the dateOfBirth slot.
 3. This panel lets us create default values for the intent's slots.
 4. Enter 
 
+
+
 ![image](https://github.com/user-attachments/assets/15c4db32-2f32-47e3-be96-f58bd26f0a49)
+
+
 
 
 5. Choose Add default value.
@@ -262,9 +269,21 @@ Still in your FollowupCheckBalance intent page, expand the dateOfBirth slot.
 ![image](https://github.com/user-attachments/assets/16bb8786-4741-4a37-b9da-c74366df8a98)
 
 
+
+
+
 # Why isn't the intent working?
+
 No matter which utterance you use, you will just get an error response. This is because the FollowupCheckBalance intent's input context isn't available yet. The intent doesn't know your birthday!
 
-1. 
+1. For your second test, ask for a balance in your account - activate the CheckBalance intent first.
+2. Then, the context for date of birth will be carried over to the FollowupCheckBalance intent. 
 
 
+![image](https://github.com/user-attachments/assets/7d1ae871-9d9d-4506-9118-40f5defdc3a3)
+
+
+
+
+
+# My very own chatbot that remembers the user's birthday - super handy! 🙌
