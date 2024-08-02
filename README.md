@@ -170,3 +170,33 @@
 8. Download the following source code file.
 
 https://storage.googleapis.com/nextwork_course_resources/courses/aws/AWS%20Project%20People%20projects/Project%3A%20Create%20a%20chatbot%20with%20Amazon%20Lex%20/BankingBotEnglish%20NextWork.py
+
+9. Choose Deploy
+
+![image](https://github.com/user-attachments/assets/141cd42f-a55c-4671-bdbf-554d8a592cca)
+
+
+# Step 6: Connect AWS Lambda with Amazon Lex
+
+1. Head back to your Amazon Lex console.
+2. Select BankerBot.
+3. On the left-hand menu, choose Aliases.
+4. Choose the default TestBotAlias.
+5. From the Languages panel, select English (US).
+6. For Source, choose your Lambda function BankingBotEnglish.
+7. Leave the Lambda function version or alias field at the default $LATEST.
+
+![image](https://github.com/user-attachments/assets/cfcc095f-ae12-4244-92ed-93948546fcac)
+
+
+# Step 7: Connect your CheckBalance intent with your Lambda function
+
+1. Navigate to your CheckBalance intent.
+2. Scroll down to fulfillment panel.
+3. Expand the On successful fulfillment bubble.
+4. Choose Advanced options.
+5. Under the fulfillment Lambda code hook panel, check the checkbox next to Use a Lambda function for fulfillment.
+
+
+![image](https://github.com/user-attachments/assets/91b202b7-a9ed-4d87-a1c1-8a1f69c5c76b)
+
