@@ -200,3 +200,71 @@ https://storage.googleapis.com/nextwork_course_resources/courses/aws/AWS%20Proje
 
 ![image](https://github.com/user-attachments/assets/91b202b7-a9ed-4d87-a1c1-8a1f69c5c76b)
 
+
+
+# Step 9: Create an output context from CheckBalance
+
+
+1. In your CheckBalance intent page, scroll down to the Contexts panel.
+2. Under the Output contexts drop-down, choose New context tag.
+
+![image](https://github.com/user-attachments/assets/97a9ff88-4be6-4a03-9807-de90017ba186)
+
+![image](https://github.com/user-attachments/assets/c1f7bbc8-3feb-4710-8639-39066f0f2644)
+
+
+1. Choose Save intent.
+2. Choose Build.
+3. Choose Test.
+
+# Step 10: Create the FollowupCheckBalance intent
+
+1. From your left hand navigation panel, head back to the Intents page.
+2. Choose Add intent.
+3. Choose Add empty intent.
+
+![image](https://github.com/user-attachments/assets/b44af5ba-bd8e-4859-a76c-50103918c66b)
+
+![image](https://github.com/user-attachments/assets/47f71eff-c1bf-40b3-857f-dbdc28142f68)
+
+
+# Add these 2 slots
+
+
+![image](https://github.com/user-attachments/assets/ea4ec229-07af-4210-9138-32d06254690a)
+
+
+# Implement Context Carryover
+
+We still need to tell the FollowupCheckBalance intent where to find the user's date of birth information from the CheckBalance intent! Let's do that now.
+
+Still in your FollowupCheckBalance intent page, expand the dateOfBirth slot.
+1. Choose Advanced options.
+2. Scroll all the way down to the Default values panel.
+3. This panel lets us create default values for the intent's slots.
+4. Enter 
+
+![image](https://github.com/user-attachments/assets/15c4db32-2f32-47e3-be96-f58bd26f0a49)
+
+
+5. Choose Add default value.
+6. Choose Update slot.
+7. Head to the Fulfillment pane to make sure the Lambda function is also connected to this intent (so random balances are still being returned to the user).
+8. Expand On successful fulfillment.
+9. Choose Advanced options.
+10. Head to the Fulfillment Lambda code hook panel.
+11. Select the checkbox to enable a fulfillment Lambda for this intent.
+12. Choose Update options.
+13. Choose Save intent.
+14. Choose Build & Test.
+
+
+![image](https://github.com/user-attachments/assets/16bb8786-4741-4a37-b9da-c74366df8a98)
+
+
+# Why isn't the intent working?
+No matter which utterance you use, you will just get an error response. This is because the FollowupCheckBalance intent's input context isn't available yet. The intent doesn't know your birthday!
+
+1. 
+
+
